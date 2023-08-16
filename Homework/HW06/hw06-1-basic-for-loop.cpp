@@ -30,3 +30,20 @@
         [7] Hello World
 
 */
+#include <stdio.h>
+
+int main(){
+    int input ;
+    scanf( "%d", &input) ;
+    if( input % 2 == 1){
+        for(int i=1; i <= input; i++) {
+            printf( "[%d] Hello World\n", i) ;
+        }//end for
+    } else {
+        for(int i=1; i <= input; i++) {
+            printf( "(%d) Hello World\n", i) ;
+        }//end for
+    }
+
+    return 0 ;
+}
